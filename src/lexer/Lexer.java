@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Hashtable;
 
 public class Lexer {
-	public int line = 1;
+	public static int line = 1;
 	private char peek = ' ';
 	private Hashtable<String, Word> words = new Hashtable<>();
 	void reserve(Word t) { words.put(t.lexeme, t); }
